@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();  
             $table->string('name',40);
             $table->string('species',30);
-            $table->string('height',6);
-            $table->string('weight',6);
+            $table->string('height',100);
+            $table->string('weight',100);
             $table->string('abilities',40);
             $table->string('img_url',300);
             $table->integer('hp');
