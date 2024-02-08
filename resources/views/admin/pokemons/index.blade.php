@@ -9,19 +9,19 @@
                 <li class="me-3 mb-3">
                     <div class="card" style="width: 18rem;">
                         <img src="{{$pokemon->img_url}}" class="card-img-top" alt="pokemon image">
-                        <div class="card-body">                           
+                        <div class="card-body">
                             <h4 class="card-title">{{$pokemon->name}} - <strong>N° {{$pokemon->id}}</strong> </h4>
-                            <h5 class="card-text">{{$pokemon->species}}</h5>  
+                            <h5 class="card-text">{{$pokemon->species}}</h5>
                         </div>
                     </div>
-                </li>      
-                @empty   
+                </li>
+                @empty
                 <li>
                     Pokemons not found
                 </li>
-                @endforelse  
+                @endforelse
             </ul>
-        </div>    
+        </div>
     </div>
 </section>
 
