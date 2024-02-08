@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\PokemonController as AdminPokemonController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +19,5 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+Route::get('/pokemons',[AdminPokemonController::class,'index'])->name('admin.pokemons.index');
+

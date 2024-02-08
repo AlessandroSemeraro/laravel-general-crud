@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Pokemon;
 use Illuminate\Http\Request;
 
 class PokemonController extends Controller
@@ -12,7 +13,8 @@ class PokemonController extends Controller
      */
     public function index()
     {
-        //
+        $pokemons=Pokemon::all();
+        return view ('admin.pokemons.index', compact('pokemons'));
     }
 
     /**

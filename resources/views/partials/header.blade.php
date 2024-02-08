@@ -1,5 +1,5 @@
 <header>
     <h1>
-        Header
+        Pokedex
     </h1>
 </header>
