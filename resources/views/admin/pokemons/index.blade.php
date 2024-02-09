@@ -17,11 +17,11 @@
                 </li>
                 @empty
                 <li>
-                    Pokemons not found
+                    Pokemons not found <!--Here -->
                 </li>
                 @endforelse
             </ul>
-        </div>
+        </div> 
     </div>
 </section>
 
