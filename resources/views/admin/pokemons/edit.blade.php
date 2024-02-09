@@ -7,7 +7,7 @@
                 <h1 class="title mb-4 pt-3">
                     Create new Pokemon
                 </h1>
-                <form action="{{ route('admin.pokemons.store') }}" method="POST" >
+                <form action="{{ route('admin.pokemons.update') }}" method="POST" >
                     @csrf
 
                     <div class="mb-3">
