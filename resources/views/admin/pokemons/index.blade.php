@@ -13,6 +13,7 @@
                             <h4 class="card-title">{{$pokemon->name}} - <strong>N° {{$pokemon->id}}</strong> </h4>
                             <h5 class="card-text">{{$pokemon->species}}</h5>
                         </div>
+                        <!--Here -->
                     </div>
                 </li>
                 @empty
