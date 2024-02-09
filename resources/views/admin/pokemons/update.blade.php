@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-6">
             <h1 class="title mb-4 pt-3">
-                Create new Pokemon
+                Modify Pokemon on DB
             </h1>
             <form action="{{ route('admin.pokemons.update'), $pokemon->id }}" method="POST" >
                 @csrf
@@ -73,8 +73,7 @@
                 </div>
 
                 
-                <button type="submit" class="btn btn-primary">Create a new pokemon</button>
-                <button type="submit" class="btn btn-info">Edit pokemon</button>
+                <button type="submit" class="btn btn-primary">Modify pokemon</button>
                 <button type="reset"  class="btn btn-warning">Clear</button>
             </form>
         </div>
