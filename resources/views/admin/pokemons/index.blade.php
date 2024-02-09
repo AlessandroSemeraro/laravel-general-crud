@@ -2,6 +2,12 @@
 
 @section('main-content')
 <section class="container">
+    <div class="text-white pt-3 text-center">
+        <a href="{{ route('admin.pokemons.create', $pokemon->id) }}">
+
+            <button class="bg-blue text-center">ADD POKEMON</button>
+        </a>
+    </div>
     <div class="row">
         <div class="col3">
             <ul class="d-flex flex-wrap">
