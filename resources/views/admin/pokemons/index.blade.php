@@ -3,10 +3,12 @@
 @section('main-content')
 <section class="container">
     <div class="text-white pt-3 text-center">
-        <a href="{{ route('admin.pokemons.create', $pokemon->id) }}">
-
-            <button class="bg-blue text-center">ADD POKEMON</button>
-        </a>
+        
+        <button class="p-3 {{ ( Route::currentRouteName() == 'admin.pokemons.create') ? 'active' : '' }}">
+            <a href="{{ route('admin.pokemons.create') }}">
+                New Pokemon
+            </a>
+        </button>
     </div>
     <div class="row">
         <div class="col3">
