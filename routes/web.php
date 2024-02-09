@@ -21,3 +21,4 @@ Route::get('/', function () {
 
 Route::get('/pokemons',[AdminPokemonController::class,'index'])->name('admin.pokemons.index');
 
+Route::get('/pokemons/create', [AdminPokemonController::class, 'create'])->name('admin.pokemons.create');
