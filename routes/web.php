@@ -20,4 +20,4 @@ Route::get('/', function () {
 });
 
 Route::get('/pokemons',[AdminPokemonController::class,'index'])->name('admin.pokemons.index');
-
+Route::post('/pokemons', [AdminPokemonController::class, 'store'])->name('admin.pokemons.store');
