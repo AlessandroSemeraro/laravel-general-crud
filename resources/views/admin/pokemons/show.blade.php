@@ -41,6 +41,9 @@
         <p class="card-text">
             Speed: {{ $pokemon->speed }}
         </p>
+        <button type="button">Edit
+            <a href="{{route('admin.pokemons.edit', $pokemon->id)}}"></a>
+        </button>
         </div>
       </div>
 </section>
