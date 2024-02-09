@@ -46,7 +46,8 @@ class PokemonController extends Controller
      */
     public function edit(string $id)
     {
-        return view('admin.pokemons.edit');
+        $pokemon=Pokemon::findOrFail($id);
+        return view('admin.pokemons.edit', compact('pokemon'));
     }
 
     /**
