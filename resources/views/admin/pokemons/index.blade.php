@@ -2,6 +2,14 @@
 
 @section('main-content')
 <section class="container">
+    <div class="text-white pt-3 text-center">
+        
+        <button class="p-3 {{ ( Route::currentRouteName() == 'admin.pokemons.create') ? 'active' : '' }}">
+            <a href="{{ route('admin.pokemons.create') }}">
+                New Pokemon
+            </a>
+        </button>
+    </div>
     <div class="row">
         <div class="col3">
             <ul class="d-flex flex-wrap">
