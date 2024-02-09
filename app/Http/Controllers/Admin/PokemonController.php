@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Pokemon;
 use Illuminate\Http\Request;
+use PhpParser\Node\Stmt\Return_;
 
 class PokemonController extends Controller
 {
@@ -14,7 +15,6 @@ class PokemonController extends Controller
     public function index()
     {
         $pokemons=Pokemon::all();
-        $pippo=0;
         return view ('admin.pokemons.index', compact('pokemons'));
     }
 
@@ -40,6 +40,8 @@ class PokemonController extends Controller
     public function show(string $id)
     {
         //
+        $pokemon=Pokemon::all()[$id - 1];
+        return view('admin.pokemons.show', compact('pokemon'));
     }
 
     /**
