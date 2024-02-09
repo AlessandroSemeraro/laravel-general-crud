@@ -54,7 +54,23 @@ class PokemonController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $pokemon = Pokemon::FindOrFail($id);
+        $pokemon->name=$data['name'];
+        $pokemon->species=$data['species'];
+        $pokemon->height=$data['height'];
+        $pokemon->weight=$data['weight'];
+        $pokemon->abilities=$data['abilities'];
+        $pokemon->img_url=$data['img_url'];
+        $pokemon->hp=$data['hp'];
+        $pokemon->attack=$data['attack'];
+        $pokemon->defensee=$data['defense'];
+        $pokemon->speed_attack=$data['speed_attack'];
+        $pokemon->speed_defence=$data['speed_defence'];
+        $pokemon->speed=$data['speed'];
+        $data = $request->all();
+        $pokemon->update($data);
+
+        return redirect()->route('admin.pokemons.show', $pokemon->id);
     }
 
     /**

@@ -20,4 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/pokemons',[AdminPokemonController::class,'index'])->name('admin.pokemons.index');
+Route::put('/pokemons/{pokemon}', [AdminPokemonController::class, 'update'])->name('admin.pokemons.update');
 
